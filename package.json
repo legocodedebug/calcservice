@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/legocodedebug/calcservice#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "rookout": "^0.1.111"
   }
 }
