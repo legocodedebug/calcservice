@@ -1,0 +1,22 @@
+{
+  "name": "calcservice",
+  "version": "1.0.0",
+  "description": "Calculator Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legocodedebug/calcservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legocodedebug/calcservice/issues"
+  },
+  "homepage": "https://github.com/legocodedebug/calcservice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
