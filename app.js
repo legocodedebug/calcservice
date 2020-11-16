@@ -20,9 +20,15 @@ app.listen(port, () => {
 })
 
 
-function sayHello(){
-    console.log(`Hello ${port}`)
+function sayHelloA(){
+    console.log(`HelloA ${port}`)
 }
 
 
-setInterval(sayHello, 2000);
+function sayHelloB(){
+    console.log(`HelloB ${port}`)
+}
+
+
+setInterval(sayHelloA, 5000);
+setInterval(sayHelloB, 7000);
