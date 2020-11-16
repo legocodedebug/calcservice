@@ -16,6 +16,13 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
- 
     console.log(`Example app listening at http://localhost:${port}`)
 })
+
+
+function sayHello(){
+    console.log(`Hello ${port}`)
+}
+
+
+setInterval(sayHello, 2000);
