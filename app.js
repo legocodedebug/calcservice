@@ -28,14 +28,14 @@ app.listen(port, () => {
 
 
 function sayHelloA(){
-    counter++;
-    console.log(`HelloA ${counter}`)
+    let counterA=counter++;
+    console.log(`HelloA ${counterA}`)
 }
 
 
 function sayHelloB(){
-    counter++;
-    console.log(`HelloB ${counter}`)
+    let counterB=counter+2;
+    console.log(`HelloB ${counterB}`)
 }
 
 
