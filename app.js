@@ -5,9 +5,15 @@ rookout.start({
         env: 'dev'
     }
 })
+
+
+const myArgs = process.argv.slice(2);
+const myPort=myArgs[0] ? myArgs[0] : 3000;
+
+
 const express = require('express')
 const app = express()
-const port = 3000
+const port = myPort
 let counter=0;
 
 app.get('/', (req, res) => {
