@@ -41,5 +41,5 @@ function sayHelloB(){
 
 
 
-setInterval(sayHelloA, 5000);
-setInterval(sayHelloB, 10000);
+// setInterval(sayHelloA, 5000);
+// setInterval(sayHelloB, 10000);
