@@ -42,6 +42,9 @@ jobs:
         uses: thundra-io/foresight-test-kit-action@v1
         with:
           api_key: 073e8995-1c58-4540-88d4-44b74cc76e47
+          test_framework: jest
+          test_format: junit
+          test_path: report
 
     
     
