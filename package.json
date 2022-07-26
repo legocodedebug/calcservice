@@ -4,7 +4,7 @@
   "description": "Calculator Service",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "JEST_JUNIT_INCLUDE_SHORT_CONSOLE_OUTPUT=true jest --reporters=jest-junit"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/legocodedebug/calcservice#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest-junit": "^14.0.0"
   },
   "devDependencies": {
     "jest": "^28.1.3"
