@@ -27,3 +27,8 @@ function sayHelloB() {
 
 // setInterval(sayHelloA, 5000);
 // setInterval(sayHelloB, 10000);
+
+function sum(a, b) {
+  return a + b;
+}
+module.exports = sum;
