@@ -14,18 +14,16 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+      # Make sure you put workflow kit action on top of all the steps 
+      - name: Collect Workflow Telemetry
+        uses: runforesight/foresight-workflow-kit-action@v1
+        with:
+          api_key: 073e8995-1c58-4540-88d4-44b74cc76e47
+
+      # Make sure you put test kit action after your test execution step 
+      - name: Analyze Test and/or Coverage Results
+        uses: thundra-io/foresight-test-kit-action@v1
+        with:
+          api_key: 073e8995-1c58-4540-88d4-44b74cc76e47
