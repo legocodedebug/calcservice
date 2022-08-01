@@ -4,7 +4,8 @@
   "description": "Calculator Service",
   "main": "index.js",
   "scripts": {
-    "test": "JEST_JUNIT_INCLUDE_SHORT_CONSOLE_OUTPUT=true jest --reporters=jest-junit"
+    "test": "JEST_JUNIT_INCLUDE_SHORT_CONSOLE_OUTPUT=true jest --reporters=jest-junit",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
