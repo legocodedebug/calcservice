@@ -2,7 +2,7 @@
 module.exports = {
   verbose: true,
   collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.{js,jsx}"],
+  collectCoverageFrom: ["./*.{js,jsx}"],
   coverageReporters: ["text", "cobertura"],
 
   // jest.config.js
