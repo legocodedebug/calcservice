@@ -51,7 +51,7 @@ jobs:
           test_path: report
           coverage_format: COBERTURA/XML
           coverage_path: |
-                      **/cov/**
+                      coverage/*.xml
 
     
     
