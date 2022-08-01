@@ -10,6 +10,7 @@ on:
     branches: ["main"]
 
 env:
+  JEST_JUNIT_OUTPUT_DIR: "./report"
   FORESIGHT_UPLOADER_SIGNER_URL: https://upload.thundra.me
   WORKFLOW_TELEMETRY_BASE_URL: https://foresight.service.thundra.me
 jobs:
