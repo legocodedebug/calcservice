@@ -49,6 +49,9 @@ jobs:
           test_framework: jest
           test_format: junit
           test_path: report
+          coverage_format: COBERTURA/XML
+          coverage_path: |
+                      **/cov/**
 
     
     
